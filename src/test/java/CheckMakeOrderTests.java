@@ -6,14 +6,12 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import pom.FirstOrderPage;
-import pom.MainPage;
-import pom.SecondOrderPage;
+import pom.*;
 
 import java.time.Duration;
 
 @RunWith(Parameterized.class)
-public class CheckOrderUpButtonParameteriz {
+public class CheckMakeOrderTests {
     private WebDriver driver;
     private MainPage mainPage;
     private FirstOrderPage firstOrderPage;
@@ -26,7 +24,7 @@ public class CheckOrderUpButtonParameteriz {
     private final String userdate;
     private final String usercomment;
 
-    public CheckOrderUpButtonParameteriz(String username, String usersurname, String usersadress, String userphone, String userdate, String usercomment) {
+    public CheckMakeOrderTests(String username, String usersurname, String usersadress, String userphone, String userdate, String usercomment) {
         this.username = username;
         this.usersurname = usersurname;
         this.usersadress = usersadress;

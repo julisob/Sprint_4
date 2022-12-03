@@ -1,17 +1,14 @@
-import org.junit.*;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import pom.MainPage;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import org.junit.*;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
 //каждый элемент списка ответов содержит конкретный текст
-public class CheckQuestionsAccordion {
+public class CheckFAQAnswersTest {
     private WebDriver driver;
     private MainPage mainPage;
 
@@ -99,8 +96,6 @@ public class CheckQuestionsAccordion {
         String exceptedAnswer = "Да, обязательно. Всем самокатов! И Москве, и Московской области.";
         Assert.assertEquals("Текст в блоке 7 FAQ не соответствует ожидаемому", exceptedAnswer, actualText);
     }
-
-
 
     @After
     public void teardown() {
