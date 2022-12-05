@@ -2,7 +2,6 @@ package pom;
 
 import org.openqa.selenium.*;
 import org.junit.*;
-import java.time.Duration;
 
 public class SecondOrderPage {
     private final WebDriver driver;
@@ -50,7 +49,7 @@ public class SecondOrderPage {
         return driver.findElement(statusButton);
     }
 
-    public void completeForm2(String userdate, String usercomment) {
+    public void completeSecondForm(String userdate, String usercomment) {
         inputDate(userdate);
         inputOrderTime();
         inputColor();

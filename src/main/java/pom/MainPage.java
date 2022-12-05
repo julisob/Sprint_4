@@ -48,6 +48,14 @@ public class MainPage {
     public void clickBottomOrderButton() {
         driver.findElement(bottomOrderButton).click();
     }
+    public void clickOrderButton(String orderButton) {
+        if (orderButton.equals("top")) {
+            clickTopOrderButton();
+        } else if (orderButton.equals("bottom")) {
+            clickBottomOrderButton();
+        } else System.out.println("Значение кнопки входа 'top'/'bottom'");
+    }
+
 }
 
 

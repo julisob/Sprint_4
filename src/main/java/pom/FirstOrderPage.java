@@ -40,7 +40,7 @@ public class FirstOrderPage {
         driver.findElement(nextButton).click();
     }
 
-    public void completeForm1(String username, String usersurname, String usersadress, String userphone) {
+    public void completeFirstForm(String username, String usersurname, String usersadress, String userphone) {
         inputName(username);
         inputSurname(usersurname);
         inputAdress(usersadress);
